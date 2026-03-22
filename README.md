@@ -2,6 +2,8 @@
 
 Thin MCP server for Gemini image generation and image editing using a Google AI Studio API key.
 
+This project is designed for fast AI-assisted iteration. For repo-specific guidance, see [AGENTS.md](/C:/git/agileimagegen-mcp/AGENTS.md), [PROJECT_STATE.md](/C:/git/agileimagegen-mcp/PROJECT_STATE.md), and [ARCHITECTURE.md](/C:/git/agileimagegen-mcp/ARCHITECTURE.md).
+
 ## What It Does
 
 - Exposes exactly 2 MCP tools: `image.generate` and `image.edit`
@@ -9,6 +11,8 @@ Thin MCP server for Gemini image generation and image editing using a Google AI 
 - Runs as a local `stdio` MCP server
 - Can also run from Docker with the same env contract
 - Saves generated images to disk and returns structured metadata
+- Supports reference-guided generation with anchor images
+- Uses a shared transparency pipeline across generate and edit
 
 ## Requirements
 
